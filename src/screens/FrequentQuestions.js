@@ -7,7 +7,7 @@ const FrequentQuestions = () => {
   const [otherQuestions, setOtherQuestions] = useState(null);
 
   return (
-    <div className="">
+    <div className="frequentQuestions">
       <div className="p-16">
         <h1 className="text-4xl font-bold mb-10">Frequently Asked Questions</h1>
         <p>Find quick answers to common questions about our legal services.</p>
