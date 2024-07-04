@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/Legal-Ease/Styles/signup.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="signup-client.html" id="client-link" class="nav-link">I'm Looking for a legal aid</a>
+            <a href="signup-lawyer.html" id="lawyer-link" class="nav-link active">I'm a lawyer</a>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="signup-form">
+            <h3>Sign up as a Lawyer</h3>
+            <span>Enter your details to use LegalEase</span>
+            <button type="button" class="social-login google">
+                <img src="/Legal-Ease/Assets/Images/google-logo.png" alt="Google logo">Continue with Google</button>
+            <button type="button" class="social-login facebook">
+                <img src="/Legal-Ease/Assets/Images/facebook-logo.webp" alt="Facebook logo">Continue with Facebook</button>
+           
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Name@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="signup-button">Sign up</button>
+            <p>Already have an account? <a href="signin-lawyer.html">Sign in</a></p>
+        </form>
+    </main>
+    <script src="/Legal-Ease/Script/signup.js"></script>
+</body>
+</html>
