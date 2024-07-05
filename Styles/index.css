@@ -234,6 +234,11 @@ main {
   color: #ffffff;
 }
 
+.get-help a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .sign-up {
   background-color: #062541;
   padding: 15.5px 53.5px;
@@ -245,7 +250,10 @@ main {
   border: none;
   border-radius: 7px;
 }
-
+.sign-up a{
+    text-decoration: none;
+    color: #ffffff;
+}
 /* Our Partner Section Styles */
 .partners {
   padding: 2em;
@@ -564,3 +572,7 @@ hr {
   line-height: 21px;
   text-align: left;
 }
+
+
+
+

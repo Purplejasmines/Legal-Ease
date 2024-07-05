@@ -73,7 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (response.ok) {
                         const data = await response.json();
                         alert(formId.includes('signup') ? 'User registered successfully!' : 'Login successful!');
-                        
+                        if (formId.includes('signup')) {
+                            window.location.href = 'signin-client.html'; 
+                          } else {
+                            window.location.href = 'landingPage.html'; 
+                          }
                     } else {
                         const error = await response.json();
                         alert('Error: ' + error.message);
