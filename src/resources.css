@@ -1,0 +1,127 @@
+.navbar {
+    background-color: #041831;
+    width: Fixed (1, 436px)px;
+    height: 72px;
+    padding: 1px, 37px, 1px, 46px;
+    gap: 124px;
+    opacity: 0px;
+    display: flex;
+}
+
+#logo-image {
+    width: 224px;
+    height: 50px;
+    gap: 0px;
+    border-radius: 250px 0px 0px 0px;
+    opacity: 0px;
+    padding: 10px;
+
+
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items {
+    width: 50%;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 16px;
+
+
+
+
+
+}
+
+#list {
+    padding-left: 12px;
+}
+
+.buttons {
+    width: 50%;
+    padding-top: 20px;
+
+
+
+}
+
+.help {
+    background-color: #EAA007;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 8px;
+
+}
+
+.donate {
+    background-color: #319A31;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+#explore {
+    width: Hug (101px)px;
+    height: Hug (48px)px;
+    padding: 12px 24px 12px 24px;
+    gap: 8px;
+    border-radius: 7px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #EAA007;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+
+
+}
+
+#text {
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.small-text {
+    color: #062541;
+
+}
+
+#sentence {
+    color: #EAA007;
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: left;
+
+}
+
+#sub-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+#header {
+    background-color: #FAF9F3;
+}
+
+#heading {
+    background-color: #E8E8E8;
+    ;
+}
