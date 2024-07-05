@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../Styles/donate.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="/Assets/Images/Logoo.png" alt="Logo" class="logo-img" />
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a href="#community">Community</a></li>
+          <li class="navbar-item"><a href="#services">Services</a></li>
+          <li class="navbar-item"><a href="#about-us">About Us</a></li>
+          <li class="navbar-item"><a href="#contact-us">Contact Us</a></li>
+          <li class="dropdown">
+            <div class="dropdown-toggle" onclick="toggleDropdownMenu(0)">
+              <span>More</span>
+            </div>
+            <svg
+              class="dropdown-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              onclick="toggleDropdownMenu(0)"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+            <div class="dropdown-menu" onclick="toggleDropdownMenu(0)">
+              <ul>
+                <li><a href="#Profile">Profile</a></li>
+                <hr />
+                <li><a href="#Blog">Blog</a></li>
+                <hr />
+                <li><a href="#Subscription">Subscription & Plan</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-auth-button">
+        <button id="login-btn">GET HELP</button>
+        <button id="signup-btn">DONATE</button>
+      </div>
+    </nav>
+    <!-- hero section  -->
+    <div class="donationContainer">
+      <div>
+        <h1 class="header">
+          Choose Your Donation <br />
+          <span class="donateSpan">Amount</span>
+        </h1>
+        <p class="donateContent">
+          Your support can make a significant difference. Select a donation
+          amount below or enter a custom amount to help us reach our goal. Every
+          contribution, big or small, brings us one step closer to providing the
+          legal support needed. Thank you for your generosity!
+        </p>
+        <button class="donateButton">Donate</button>
+      </div>
+      <div>
+        <img
+          src="../../Assets/Images/help.png"
+          class="helpImage"
+          alt="helpImage"
+        />
+      </div>
+    </div>
+
+    <!-- Contribution Section -->
+
+    <div>
+      <img
+        src="../../Assets/Images/child.png"
+        class="childImage"
+        alt="helpImage"
+      />
+      <img
+        src="../../Assets/Images/contribution.png"
+        class="contributionImage"
+        alt="helpImage"
+      />
+    </div>
+    <!-- Support Section -->
+
+    <div class="supportContainer">
+      <div>
+        <h1 class="header">
+          Choose Your Donation <br />
+          We Appreciate for the
+          <span class="donateSpan">Support Healing</span> <br />and
+          <span class="donateSpan">Hope</span>
+          <span class="donateSpan">Amount</span>
+        </h1>
+        <p class="supportContent">
+          Your support can make a significant difference. Select a donation
+          amount below or enter a custom amount to help us reach our goal. Every
+          contribution, big or small, brings us one step closer to providing the
+          legal support needed. Thank you for your generosity!
+        </p>
+        <button class="donateButton">Donate</button>
+      </div>
+    </div>
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <img src="/Assets/Images/Logoo.png" alt="Logo" class="footer-logo" />
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="subscribe-text">Subscribe</p>
+          <div class="input-email">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="subscribe-input"
+            />
+            <button>Subscribe</button>
+          </div>
+          <p class="agree">By subscribing you agree to our Privacy Policy</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="#terms-of-service">Terms of Service</a>
+          <a href="#cookie-settings">Cookie Settings</a>
+        </div>
+        <div class="footer-bottom-right">
+          <p>&copy; 2024 LegalEase. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
