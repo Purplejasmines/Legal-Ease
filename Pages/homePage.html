@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/home-page.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="/Assets/Images/Logoo.png" alt="Logo" class="logo-img" />
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a href="#community">Community</a></li>
+          <li class="navbar-item"><a href="#services">Services</a></li>
+          <li class="navbar-item"><a href="#about-us">About Us</a></li>
+          <li class="navbar-item"><a href="#contact-us">Contact Us</a></li>
+          <li class="dropdown">
+            <div class="dropdown-toggle" onclick="toggleDropdownMenu(0)">
+              <span>More</span>
+            </div>
+            <svg
+              class="dropdown-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              onclick="toggleDropdownMenu(0)"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+            <div class="dropdown-menu" onclick="toggleDropdownMenu(0)">
+              <ul>
+                <li><a href="#Profile">Profile</a></li>
+                <hr />
+                <li><a href="#Blog">Blog</a></li>
+                <hr />
+                <li><a href="#Subscription">Subscription & Plan</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-auth-button">
+        <button id="login-btn">GET HELP</button>
+        <button id="signup-btn">DONATE</button>
+      </div>
+    </nav>
+    <!-- hero section  -->
+    <section class="home-hero">
+      <div class="background-image"></div>
+      <div class="hero-content-cont">
+        <div class="content">
+          <h1>
+            We Know What Is On The Line For You, We Can
+            <span class="help">Help!</span>
+          </h1>
+          <p>
+            "We stand against those who exploit and manipulate others, driven by
+            their own selfish desires. They are blind to the lasting pain and
+            suffering they cause. We hold them accountable, and we support you
+            in your journey to reclaim your life and find peace."
+          </p>
+          <div class="buttons">
+            <button class="get-helpp">GET HELP</button>
+            <button class="counsel">Need Counsel</button>
+          </div>
+          <div class="chatbox-box">
+            <img src="/Assets/Images/chatbox.png" alt="chat-box" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Section -->
+    <section id="ai" class="ai-section">
+      <div class="ai">
+        <h2>
+          Find Comfort and Support with AI Lawyer- Expert Legal and Emotional
+          Guidance.
+        </h2>
+
+        <p>
+          In your journey to healing, you deserve compassionate support and
+          reliable advice. AI Lawyer is here to provide discreet legal
+          assistance and therapeutic guidance, ensuring you never feel alone.
+          Let us stand by your side and help you find the strength to move
+          forward."
+        </p>
+        <button>GET HELP</button>
+      </div>
+      <div class="ai-image">
+        <img src="/Assets/Images/airobot.png" alt="Hero Image" />
+      </div>
+    </section>
+
+    <!-- Signified Legal Section -->
+    <section id="legal" class="legal-section">
+      <div class="legal-container">
+        <div class="legal">
+          <h2>Simplified Legal Support Through SMS Messaging</h2>
+
+          <p>
+            Finding the strength to seek help is a courageous step. We're here
+            to make it easier for you. With our simple SMS messaging service,
+            you can access the legal support you need quickly and discreetly.
+            You're not alone – we’re here to support you every step of the way.
+          </p>
+          <button>Send a message</button>
+        </div>
+        <div class="legal-image">
+          <img src="/Assets/Images/pexels-gabby.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+    <!-- testimonials -->
+    <section class="testimonials">
+      <div class="testimonial-content">
+        <h2>Client Testimonials</h2>
+        <p>Read what our satisfied clients have to say</p>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <div class="rating">
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+          </div>
+          <p class="testimonial-text">
+            LegalEase has been a game-changer for me. The AI-powered chatbots
+            and lawyers provided immediate and valuable legal advice.
+          </p>
+          <div class="testimonial-card">
+            <img src="/Assets/Icons/john-doe.png" alt="" />
+            <div class="testimonial-names">
+              <p class="name">John Doe</p>
+              <p class="ceo">CEO, ABC Company</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="rating">
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+            <img src="/Assets/Icons/star.png" alt="" />
+          </div>
+          <p class="testimonial-text">
+            I was amazed by the comprehensive legal support I received from
+            LegalEase. They truly prioritize accessibility and affordability.
+          </p>
+
+          <div class="testimonial-card">
+            <img src="/Assets/Icons/jay-smith.jpg" alt="" />
+            <div class="testimonial-names">
+              <p class="name">Jane Smith</p>
+              <p class="coo">COO, XYZ Corporation</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Expert legal -->
+
+    <section id="legal-advice" class="legal-advice">
+      <div class="legal-advice-container">
+        <div class="legal-advice-legal">
+          <h2>Get Expert Legal Advice Today</h2>
+
+          <p>
+            Sign up for a consultation or subscribe to our flexible payment
+            plan.
+          </p>
+          <div class="legal-buttons">
+            <button class="consult-btn">Consult</button>
+            <button class="subscribe">Subscribe</button>
+          </div>
+        </div>
+        <div class="legal-advice-image">
+          <img src="/Assets/Images/pexels-picha.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact-section">
+      <div class="contact">
+        <p class="accessibility">Accessible</p>
+        <h2>Contact LegalEase</h2>
+
+        <p class="contact-text">
+          Have a question or need support? Get in touch with LegalEase.
+        </p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-details">
+          <div class="email">
+            <img src="/Assets/Icons/envelope.png" alt="" />
+            <p>Email</p>
+            <p>Send us an email</p>
+            <p>hello@legalease.com</p>
+          </div>
+
+          <div class="phone">
+            <img src="/Assets/Icons/phone.png" alt="" />
+            <p>Phone</p>
+            <p>Give us a call</p>
+            <p>+234 700 1190 50000</p>
+          </div>
+
+          <div class="email">
+            <img src="/Assets/Icons/map.png" alt="" />
+            <p>Office</p>
+            <p>123, Adesuwa lane, Opebi Rd, Ikeja, Lagos</p>
+            <p>Get Directions ></p>
+          </div>
+        </div>
+
+        <div class="map">
+          <img src="/Assets/Images/map.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <img src="/Assets/Images/Logoo.png" alt="Logo" class="footer-logo" />
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="subscribe-text">Subscribe</p>
+          <div class="input-email">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="subscribe-input"
+            />
+            <button>Subscribe</button>
+          </div>
+          <p class="agree">By subscribing you agree to our Privacy Policy</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="#terms-of-service">Terms of Service</a>
+          <a href="#cookie-settings">Cookie Settings</a>
+        </div>
+        <div class="footer-bottom-right">
+          <p>&copy; 2024 LegalEase. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

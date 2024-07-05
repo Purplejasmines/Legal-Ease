@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./Styles/signup.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="signin-client.html" id="client-link" class="nav-link">I'm Looking for a legal aid</a>
+            <a href="signin-lawyer.html" id="lawyer-link" class="nav-link active">I'm a lawyer</a>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="signup-form">
+            <h3>Sign In as a Lawyer</h3>
+            <span>Enter your details to use LegalEase</span>
+            <button type="button" class="social-login google">
+                <img src="./Assets/Images/google-logo.png" alt="Google logo">Continue with Google</button>
+            <button type="button" class="social-login facebook">
+                <img src="./Assets/Images/facebook-logo.webp" alt="Facebook logo">Continue with Facebook</button>
+           
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Name@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="signup-button"><a href="/Pages/homePage.html">Sign In</a></button>
+            <p><a href="#">Forgot Password?</a></p>
+        </form>
+    </main>
+    <script src="/Script/script.js"></script>
+</body>
+</html>
