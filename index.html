@@ -4,10 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="./Styles/index.css">
 </head>
 <body>
-    <div>
-        Hello
+ <!-- Navbar -->
+ <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="./Images/Logoo.png legal.png" alt="Logo" class="logo-img" />
     </div>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#community">Community</a></li>
+      <li class="navbar-item"><a href="#services">Services</a></li>
+      <li class="navbar-item"><a href="#about-us">About Us</a></li>
+      <li class="navbar-item"><a href="#contact-us">Contact Us</a></li>
+      <li class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdownMenu(0)">
+          <span>More</span>
+        </div>
+        <svg
+        class="dropdown-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        onclick="toggleDropdownMenu(0)" 
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+      <div class="dropdown-menu" onclick="toggleDropdownMenu(0)">
+        <ul>
+          <li><a href="#Profile">Profile</a></li>
+          <hr />
+          <li><a href="#Blog">Blog</a></li>
+          <hr />
+          <li><a href="#Subscription">Subscription & Plan</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="navbar-auth-button">
+  <button id="login-btn">GET HELP</button>
+  <button id="signup-btn">DONATE</button>
+</div>
+</nav>
+  <!-- Main -->
+    <div class="container">
+        <div class="left">
+            <h1>Get in Touch</h1>
+        </div>
+        <div class="right">
+            <p>you have any questions or need assistance, please fill out the form below <br>and we will get back to you as soon as possible.</p>
+        </div>
+    </div>
+
+    <div class="contain">
+
+        <div class="subheading">Accessible</div>
+        <div class="heading"><h1>Get in Touch</h1></div>
+        <div class="description">We'd love to hear from you. Contact us for any inquiries.</div>
+    <div>
+
+    <div class="contact-container">
+        <div class="contact-item">
+            <img src="./Images/email.png" alt="Email Icon" width="40" height="40">
+            <h2>Email</h2>
+            <p>Send us an email and we’ll get back to you promptly.</p>
+            <a href="mailto:hello@legalease.com">hello@legalease.com</a>
+        </div>
+        <div class="contact-item">
+            <img src="./Images/telephone.png" alt="Phone Icon" width="40" height="40">
+            <h2>Phone</h2>
+            <p>Give us a call during business hours for immediate assistance.</p>
+            <a href="tel:+23470011905000">+234 700 1190 5000</a>
+        </div>
+        <div class="contact-item">
+            <img src="./Images/web.png" alt="Location Icon" width="40" height="40">
+            <h2>Office</h2>
+            <p>Visit our office for a face-to-face consultation.</p>
+            <a href="https://maps.google.com?q=123+Adesuwa+lane,+Opebi+Rd,+Ikeja,+Lagos" target="_blank">123, Adesuwa lane, Opebi Rd, Ikeja, Lagos</a>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Get Help</h2>
+        <h1>Contact LegalEase</h1>
+        <p>Have a question or need support? Fill out the form below.</p>
+        <form>
+            <div class="form-group inline-group">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+            </div>
+            <div class="form-group inline-group">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number">
+                </div>
+            </div>
+            <div class="form-group1">
+                <label for="topic">Choose a Topic</label>
+                <select id="topic" name="topic">
+                    <option value="">Select one...</option>
+                    <option value="topic1">Topic 1</option>
+                    <option value="topic2">Topic 2</option>
+                    <option value="topic3">Topic 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Which Best Describes You?</label>
+                <div class="radio-group">
+                   <ul>
+                    <li>
+                    <label><input type="radio" name="description" value="option1"> Option 1</label>
+                    <label><input type="radio" name="description" value="option2"> Option 2</label>
+                    <label><input type="radio" name="description" value="option3"> Option 3</label> 
+                    <label><input type="radio" name="description" value="option4"> Option 4</label>
+                    <label><input type="radio" name="description" value="option5"> Option 5</label>
+                    <label><input type="radio" name="description" value="other"> Other</label> 
+                 </li>
+                 </ul>
+                 </div>
+                
+            </div>
+            <div class="form-groupmessage">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="form-group checkbox-group">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I accept the Terms and Conditions</label>
+    </div>
+    <div class="form-group submit-group">
+        <button type="submit">Submit</button>
+    </div>
+
+    <section class="location-section">
+        <div class="location-container">
+            <div class="location-text">
+                <h2>Connect</h2>
+                <h1>Our Location</h1>
+                <h3>Lagos</h3>
+                <p>123, Adesuwa lane, Opebi Rd, Ikeja, Lagos</p>
+                <a href="#" class="map-link">View Map</a>
+            </div>
+            <div class="location-map">
+                <img src="./Images/map.png" alt="Map location">
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="faq-container">
+           <div><h1>FAQs</h1></div> 
+            <p>Have a question? Find answers to common inquiries about contacting LegalEase.</p>
+            <div class="faq">
+                
+                <details>
+                    <summary>How can I contact LegalEase?</summary>
+                    <p>You can contact LegalEase by email, phone, or visiting our office.</p>
+                </details>
+                <details>
+                    <summary>What are your office hours?</summary>
+                    <p>Our office hours are Monday to Friday, 9 AM to 5 PM.</p>
+                </details>
+                <details>
+                    <summary>How long will it take to receive a response?</summary>
+                    <p>We typically respond to inquiries within 24 hours.</p>
+                </details>
+                <details>
+                    <summary>Can I schedule a consultation?</summary>
+                    <p>Yes, you can schedule a consultation by contacting us through email or phone.</p>
+                </details>
+                <details>
+                    <summary>Is LegalEase available nationwide?</summary>
+                    <p>Yes, LegalEase offers services nationwide.</p>
+                </details>
+            
+            </div>
+            <div class="contacts-section">
+                <h3>Still have questions?</h3>
+                <p>Contact our team for further assistance.</p>
+                <a href="#" class="contact-button">Contact</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-left">
+            <img src="./Images/Logoo.png legal.png" alt="Logo" class="footer-logo"/>
+            <ul class="footer-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#community">Community</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <p class="subscribe-text">Subscribe</p>
+            <div class="input-email">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="subscribe-input"
+              />
+              <button>Subscribe</button>
+            </div>
+            <p class="agree">By subscribing you agree to our Privacy Policy</p>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-of-service">Terms of Service</a>
+            <a href="#cookie-settings">Cookie Settings</a>
+          </div>
+          <div class="footer-bottom-right">
+            <p>&copy; 2024 LegalEase. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="./Script/script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
